@@ -1,0 +1,46 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
+
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+  "rules": {
+    "array-bracket-spacing": [1,"always",{"singleValue":true,"objectsInArrays":true,"arraysInArrays":true}],
+    "brace-style": [1,"1tbs",{"allowSingleLine":true}],
+    "no-console": "off",
+    "computed-property-spacing": [1,"always"],
+    "eol-last": 1,
+    "indent": [2, 4, {"SwitchCase": 1}],
+    "lines-around-comment": [1,{"beforeBlockComment":true,"beforeLineComment":true}],
+    "no-mixed-spaces-and-tabs": [1,"smart-tabs"],
+    "no-multiple-empty-lines": [1,{"max":1}],
+    "no-nested-ternary": 1,
+    "no-spaced-func": 1,
+    "no-trailing-spaces": [1,{"skipBlankLines":false}],
+    "no-var": 1,
+    "object-curly-spacing": [1,"always",{"arraysInObjects":true,"objectsInObjects":true}],
+    "prefer-const": 1,
+    "semi": [1,"always"],
+    "sort-vars": 1,
+    "keyword-spacing":  ["error", { "before": true, "after": true }],
+    "space-before-blocks": [1,"always"],
+    "space-before-function-paren": 1,
+    "space-in-parens": [1,"always",{"exceptions":["{}"]}],
+    "space-infix-ops": 1,
+    "space-unary-ops": [1,{"words":true}],
+    "arrow-parens": [1,"always"],
+    "arrow-spacing": [1,{"before":true,"after":true}],
+    "padding-line-between-statements": [
+      "error",
+        { blankLine: "always", prev: ["const", "let", "var"], next: "*"},
+        { blankLine: "any",    prev: ["const", "let", "var"], next: ["const", "let", "var"]},
+        { blankLine: "always", prev: "directive", next: "*" },
+        { blankLine: "any",    prev: "directive", next: "directive" },
+        { blankLine: "always", prev: "*", next: "return" }
+    ]
+  }
+}
